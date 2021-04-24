@@ -3,9 +3,6 @@ name: App-Publish
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  workflow_dispatch:
 
 jobs:
   publish:
@@ -17,5 +14,5 @@ jobs:
         with:
           app-name: crawfis
           publish-profile: ${{ secrets.APPSERVICE_PROFILE }}
-          package: ./html
+          package: ./home
           
