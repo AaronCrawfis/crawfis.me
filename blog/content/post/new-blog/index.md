@@ -152,9 +152,9 @@ These steps adapt the [Static Web App docs](https://docs.microsoft.com/en-us/azu
 1. Wait for deployment to complete, and then click `Go to resource`
 1. Click the banner indicating the build is still underway
    ![Screenshot of banner](azure-webapp-banner.png)
-1. This build will fail due to the git submodule we used. We will need to add a step to clone all submodules.
-1. Click `View workflow file` in the failed GitHub Action workflow
-   ![Screenshot of GitHub action view workflow](github-view-workflow.png)
-1. Click the edit icon (✏️)
-1. Add the following step under 
-1. Done! Now any pushed you make to your repo will rebuild and republish the site.
+1. Wait for the build to complete
+1. Back in Azure, open the Static Web App URL and see that the website looks bad. There's one last step.
+   ![Screenshot of broken website](website-broken.png)
+1. Open `config.toml`, and update the `baseURL` field to match the site URL that was generated for you.
+1. Commit and push your change, and wait for the build to complete.
+1. Done! Now any pushes you make to your repo will rebuild and republish the site.
