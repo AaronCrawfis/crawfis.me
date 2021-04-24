@@ -1,5 +1,0 @@
-baseURL = "https://blog.crawfis.me"
-languageCode = "en-us"
-title = "Blog: Aaron Crawfis"
-
-theme = "hugo-clarity"
