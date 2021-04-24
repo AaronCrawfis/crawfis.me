@@ -3,6 +3,9 @@ name: App-Publish
 on:
   push:
     branches: [ master ]
+    paths:
+      - "home/**"
+      - ".github/workflows/home.yml"
 
 jobs:
   publish:
