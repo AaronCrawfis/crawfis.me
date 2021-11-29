@@ -2,7 +2,7 @@ name: Deploy Homepage
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - "home/**"
       - ".github/workflows/home.yml"

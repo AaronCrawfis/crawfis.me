@@ -3,14 +3,14 @@ name: Build & Deploy Blog
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "blog/**"
       - ".github/workflows/blog.yml"
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - master
+      - main
     paths:
       - "blog/**"
       - ".github/workflows/blog.yml"
